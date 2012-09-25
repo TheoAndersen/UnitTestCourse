@@ -16,6 +16,7 @@ namespace _2___AnnoyingDependencies
      * 2. At de to kald til log4net bliver kaldt med den rigtige tekst (ikke integrationstest, så test at AgeCalculatoren logger de to linjer er godt nok)
      * 
      * For at gøre dette er det nødvendigt at ændre designet sådan at det er muligt at unit teste dette.
+     * Dette kræver afkobling af DateTime.now samt Logningen
      */
     class Program
     {
