@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using log4net;
 
 namespace _2___AnnoyingDependencies
 {
@@ -28,11 +29,26 @@ namespace _2___AnnoyingDependencies
                 return;
             }
 
-            AgeCalculator ageCalculator = new AgeCalculator();
+            ILog logger = InitializeLogging();
+
+            AgeCalculator ageCalculator = new AgeCalculator(logger, DateTime.Now);
 
             ageCalculator.CalculateAgeInDays(args[0]);
 
             Console.ReadKey();
+        }
+
+        private static ILog InitializeLogging()
+        {
+
+            if (!LogManager.GetRepository().Configured)
+            {
+                // Configure log4net.
+                log4net.Config.XmlConfigurator.Configure();
+            }
+
+            ILog logger = log4net.LogManager.GetLogger("RollingFile");
+            return logger;
         }
     }
 }

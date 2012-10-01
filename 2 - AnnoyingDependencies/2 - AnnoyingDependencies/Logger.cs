@@ -9,27 +9,41 @@ namespace _2___AnnoyingDependencies
 {
     public class Logger
     {
-        private static ILog logger;
+        // this static wrapper is not used anymore, as we use the abstraction already included in the Log4Net api
 
-        private static void Initialize()
-        {
-            // Only configure log4net once per process   
-            if (!LogManager.GetRepository().Configured)
-            {
-                // Configure log4net.
-                log4net.Config.XmlConfigurator.Configure();
-            }
+        //private static ILog logger;
 
-            if (logger == null)
-            {
-                logger = log4net.LogManager.GetLogger("RollingFile");
-            }
-        }
+        //private static void Initialize()
+        //{
+        //    // Only configure log4net once per process   
+        //    if (!LogManager.GetRepository().Configured)
+        //    {
+        //        // Configure log4net.
+        //        log4net.Config.XmlConfigurator.Configure();
+        //    }
 
-        public static void LogInfo(string info)
-        {
-            Initialize();
-            logger.Info(info);
-        }
+        //    if (logger == null)
+        //    {
+        //        logger = log4net.LogManager.GetLogger("RollingFile");
+        //    }
+        //}
+
+        //public static ILog Initialize()
+        //{
+        //    // Only configure log4net once per process   
+        //    if (!LogManager.GetRepository().Configured)
+        //    {
+        //        // Configure log4net.
+        //        log4net.Config.XmlConfigurator.Configure();
+        //    }
+
+        //    return log4net.LogManager.GetLogger("RollingFile");
+        //}
+
+        //public static void LogInfo(string info)
+        //{
+        //    Initialize();
+        //    logger.Info(info);
+        //}
     }
 }
