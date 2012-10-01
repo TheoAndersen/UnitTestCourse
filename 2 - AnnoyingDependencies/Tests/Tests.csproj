@@ -54,9 +54,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\2 - AnnoyingDependencies\2 - AnnoyingDependencies.csproj">
+    <ProjectReference Include="..\2 - AnnoyingDependencies\AnnoyingDependencies.csproj">
       <Project>{8c357ec8-cc17-46cd-bb9e-f2d7b7ea1521}</Project>
-      <Name>2 - AnnoyingDependencies</Name>
+      <Name>AnnoyingDependencies</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

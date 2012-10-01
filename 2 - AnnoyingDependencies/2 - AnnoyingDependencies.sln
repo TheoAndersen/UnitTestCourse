@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2 - AnnoyingDependencies", "2 - AnnoyingDependencies\2 - AnnoyingDependencies.csproj", "{8C357EC8-CC17-46CD-BB9E-F2D7B7EA1521}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{41437711-2023-4D5B-926F-EEECC8477B63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnnoyingDependencies", "2 - AnnoyingDependencies\AnnoyingDependencies.csproj", "{8C357EC8-CC17-46CD-BB9E-F2D7B7EA1521}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8C357EC8-CC17-46CD-BB9E-F2D7B7EA1521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8C357EC8-CC17-46CD-BB9E-F2D7B7EA1521}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8C357EC8-CC17-46CD-BB9E-F2D7B7EA1521}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8C357EC8-CC17-46CD-BB9E-F2D7B7EA1521}.Release|Any CPU.Build.0 = Release|Any CPU
 		{41437711-2023-4D5B-926F-EEECC8477B63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{41437711-2023-4D5B-926F-EEECC8477B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41437711-2023-4D5B-926F-EEECC8477B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41437711-2023-4D5B-926F-EEECC8477B63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C357EC8-CC17-46CD-BB9E-F2D7B7EA1521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C357EC8-CC17-46CD-BB9E-F2D7B7EA1521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C357EC8-CC17-46CD-BB9E-F2D7B7EA1521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C357EC8-CC17-46CD-BB9E-F2D7B7EA1521}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
