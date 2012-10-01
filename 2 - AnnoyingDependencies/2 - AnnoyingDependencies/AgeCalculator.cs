@@ -8,7 +8,7 @@ namespace _2___AnnoyingDependencies
 {
     public class AgeCalculator
     {
-        public static void CalculateAgeInDays(string enteredbirthday)
+        public void CalculateAgeInDays(string enteredbirthday)
         {
             DateTime birthday = DateTime.Parse(enteredbirthday);
 

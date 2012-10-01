@@ -28,7 +28,9 @@ namespace _2___AnnoyingDependencies
                 return;
             }
 
-            AgeCalculator.CalculateAgeInDays(args[0]);
+            AgeCalculator ageCalculator = new AgeCalculator();
+
+            ageCalculator.CalculateAgeInDays(args[0]);
 
             Console.ReadKey();
         }
